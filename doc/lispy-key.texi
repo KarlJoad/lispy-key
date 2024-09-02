@@ -1,0 +1,142 @@
+\input texinfo
+@c -*- texinfo -*-
+
+@c %**start of header
+@setfilename lispy-key.info
+@documentencoding UTF-8
+@settitle Lispy-Key Reference Manual
+@c %**end of header
+
+@include version.texi
+
+@macro lispykey{}
+Lispy-Key
+@end macro
+
+@copying
+Copyright @copyright{} 2023 Raven Hallsby@*
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A
+copy of the license is included in the section entitled ``GNU Free
+Documentation License''.
+@end copying
+
+@titlepage
+@title @lispykey{} Reference Manual
+@subtitle Lisp-based Software Key Remapper
+@author Raven Hallsby
+
+@insertcopying
+@end titlepage
+
+@contents
+
+@c *********************************************************************
+@node Top
+@top Lispy-Key
+
+This document describes @lispykey{} version @value{VERSION}, hardware
+simulator supporting time travel.
+
+@menu
+* Introduction::                What is @lispykey{}?
+* Resources::                   Resources @lispykey{} used for inspiration.
+* Contributing::                You can help too!
+@end menu
+
+@node Introduction
+@chapter Introduction
+
+@cindex purpose
+@lispykey{} is a software key remapper, in the vein of kmonad, keyd,
+kbct, and others.
+
+@itemize
+@item
+@uref{https://github.com/kmonad/kmonad, kmonad}
+
+@item
+@uref{https://github.com/rvaiya/keyd, keyd}
+
+@item
+@uref{https://github.com/samvel1024/kbct, kbct}
+
+@item
+@uref{https://github.com/qmk/qmk_firmware, QMK}
+
+@item
+@uref{https://github.com/zmkfirmware/zmk, ZMK}
+@end itemize
+
+@node Resources
+@chapter Resources
+The very beginnings of my code was inspired by
+@uref{https://github.com/samvel1024/kbct, kbct}.
+
+
+@node Contributing
+@chapter Contributing
+@cindex documentation
+
+@lispykey{} is documented using the Texinfo system.
+
+@menu
+* Style Guidelines::            Making all code look the same.
+* Submitting Patches::          Sharing your work & improvements.
+* Writing Documentation::       Improving & Writing documentation.
+@end menu
+
+@node Style Guidelines
+@section Style Guidelines
+This project uses
+@uref{https://google.github.io/styleguide/lispguide.xml, Google's Common
+Lisp style guide} as its guideline.  This document is freely available
+online and contains, what I believe, are a good set of default style
+points. Please read this document before submitting your changes to
+ensure all of your modifications meet this style guide.  If your changes
+have a good reason not to follow these guidelines, make sure you
+document @emph{why} with appropriate comments.
+
+@node Submitting Patches
+@section Submitting Patches
+When writing documentation, please use gender-neutral wording when
+referring to people, such as
+@uref{https://en.wikipedia.org/wiki/Singular_they, singular
+``they''@comma{} ``their''@comma{} ``them''}, and so forth.
+
+@quotation Heads Up
+Please be sure to test your code with multiple Common Lisp
+implementations before submitting your changes!  @lispykey{} is written using
+ANSI-compliant Common Lisp, so any conforming implementation should
+work.  @lispykey{} is currently tested with @uref{https://www.sbcl.org/, SBCL}
+and @uref{https://ccl.clozure.com/, CCL}.
+@end quotation
+
+@node Writing Documentation
+@section Writing Documentation
+
+To render documentation, you must first make sure that you ran both
+@command{./bootstrap} and @command{./configure} in your source tree.
+After that you can run one of the following commands:
+
+@itemize
+@item @samp{make info} to compile the Info manual.
+      You can check it with @command{info doc/lispy-key.info}.
+@item @samp{make doc/lispy-key.info} to compile the Info manual.
+      You can check it with @command{info doc/lispy-key.info}.
+@item @samp{make html} to compile the HTML version.
+      You can point your browser to the relevant file in the
+      @file{doc/lispy-key.html} directory.
+@item @samp{make doc/lispy-key.html} to compile the HTML version.
+      You can point your browser to the relevant file in the
+      @file{doc/lispy-key.html} directory.
+@end itemize
+
+@bye
+
+@c Local Variables:
+@c ispell-local-dictionary: "american";
+@c End:

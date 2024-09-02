@@ -1,0 +1,82 @@
+# Ignore build artifacts
+build/
+bin/
+
+# Ignore compiled Common-Lisp files
+*.FASL
+*.fasl
+*.fas
+*.lisp-temp
+*.dfsl
+*.pfsl
+*.d64fsl
+*.p64fsl
+*.lx64fsl
+*.lx32fsl
+*.dx64fsl
+*.dx32fsl
+*.fx64fsl
+*.fx32fsl
+*.sx64fsl
+*.sx32fsl
+*.wx64fsl
+*.wx32fsl
+
+# Ignore etags/ctags
+TAGS
+GPATH
+GRTAGS
+GTAGS
+
+# Ignore C object files and libraries
+*.o
+*.so
+*.a
+
+*.log
+*.tmp
+
+# Emacs/Vim Backup/Auto-Save files
+*~
+.#*
+\#*\#
+,*
+
+# MacOS thing
+.DS_Store
+
+# Verilog files
+**.v
+
+# Documentation & Autoconf/Automake stuff
+/aclocal.m4
+/autom4te.cache
+/build-aux
+/config.status
+/configure
+/doc/*.1
+/doc/.dirstamp
+/doc/contributing.*.texi
+/doc/lispy-key*.aux
+/doc/lispy-key*.cp
+/doc/lispy-key*.cps
+/doc/lispy-key*.fn
+/doc/lispy-key*.fns
+/doc/lispy-key*.html
+/doc/lispy-key*.info
+/doc/lispy-key*.info-[0-9]
+/doc/lispy-key*.ky
+/doc/lispy-key*.pdf
+/doc/lispy-key*.pg
+/doc/lispy-key*.toc
+/doc/lispy-key*.t2p
+/doc/lispy-key*.tp
+/doc/lispy-key*.vr
+/doc/lispy-key*.vrs
+/doc/lispy-key.*.texi
+/doc/stamp-vti
+/doc/version.texi
+/doc/version-*.texi
+/m4/*
+Makefile
+Makefile.in
