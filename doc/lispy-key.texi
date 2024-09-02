@@ -43,6 +43,7 @@ simulator supporting time travel.
 
 @menu
 * Introduction::                What is @lispykey{}?
+* Configuration::               Making @lispykey{} your own.
 * Resources::                   Resources @lispykey{} used for inspiration.
 * Contributing::                You can help too!
 @end menu
@@ -70,6 +71,17 @@ kbct, and others.
 @item
 @uref{https://github.com/zmkfirmware/zmk, ZMK}
 @end itemize
+
+@node Configuration
+@chapter Configuration
+@lispykey{} supports a @emph{similar} S-expression format that
+@uref{https://github.com/kmonad/kmonad, kmonad} uses.  @lispykey{} does
+not support any configuration currently.  In the meantime, please see
+@uref{https://github.com/kmonad/kmonad/blob/master/keymap/tutorial.kbd,
+kmonad's tutorial configuration} on GitHub.
+
+We recommend you use @uref{https://github.com/kmonad/kbd-mode, kbd-mode}
+when editing keyboard configuration files in Emacs.
 
 @node Resources
 @chapter Resources
